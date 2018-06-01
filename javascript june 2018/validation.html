@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+first<input type="text" id="first"><br>
+
+
+<input type="button" value="total" onClick="answer1()">length is<input type="text" id="ans"><br>
+ans <input type="text" id="ans1">
+<br>
+first index of <input type="text" id="ans2">
+<br>
+last index of <input type="text" id="ans3">
+<br>
+middle name <input type="text" id="ans4">
+<br>
+wrong <input type="text" id="ans5">
+ <script>
+function answer1()
+{
+	a=document.getElementById("first").value;
+	b=a.length;
+	c=a.indexOf(" ");
+	d=a.lastIndexOf(" ");
+	document.getElementById("ans").value=b;
+	if(c==-1)
+	{
+	document.getElementById("ans1").value="please enter surname";
+	}
+	else
+	{
+		document.getElementById("ans1").value="username correct";
+	}
+	document.getElementById("ans2").value=c;
+	document.getElementById("ans3").value=d;
+	e=d-c;
+	if(e>1)
+	{
+		document.getElementById("ans4").value="middle name available";
+	}
+	else{
+		document.getElementById("ans4").value="middle name not available";
+	}
+	if(a.indexOf(0)==0 || a.indexOf(1)==0 || a.indexOf(2)==0 || a.indexOf(3)==0 || a.indexOf(4)==0 || a.indexOf(5)==0 || a.indexOf(6)==0 || a.indexOf(7)==0 || a.indexOf(8)==0 || a.indexOf(9)==0)
+	{
+		document.getElementById("ans5").value="wrong";
+	}
+	else{
+		document.getElementById("ans5").value="right";
+	}
+}
+</script>
+</body>
+</html>

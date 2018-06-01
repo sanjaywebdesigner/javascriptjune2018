@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+Distance Covered<input type="text" id="dis"><br>
+Minimum Fare<input type="text" id="minfare"><br>
+Freeze Km<input type="text" id="fre"><br>
+price per km<input type="text" id="price1"><br>
+<input type="button" value="total" onClick="answer1()"><input type="text" id="ans">
+ <script>
+function answer1()
+{
+	distance=Number(document.getElementById("dis").value);
+	
+	minfare=Number(document.getElementById("minfare").value);
+	
+	freeze1=Number(document.getElementById("fre").value);
+
+	price1=Number(document.getElementById("price1").value);
+	
+	if(distance<=freeze1)
+	{
+		a=minfare;
+		document.getElementById("ans").value=a;
+	}
+	else
+	{
+		fare=minfare+(distance-freeze1)*price1;
+		document.getElementById("ans").value=fare;
+	}
+	
+}
+</script>
+</body>
+</html>
