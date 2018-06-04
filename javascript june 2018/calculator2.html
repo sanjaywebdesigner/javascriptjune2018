@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<input type="text" id="cal"><br>
+<input type="button" value="calculate">
+<input type="button" value="1" onClick="a1()">
+<input type="button" value="2" onClick="a2()">
+<input type="button" value="3" onClick="a3()">
+<input type="button" value="4" onClick="a4()">
+<input type="button" value="5" onClick="a5()">
+<input type="button" value="6" onClick="a6()">
+<input type="button" value="7" onClick="a7()">
+<input type="button" value="8" onClick="a8()">
+<input type="button" value="9" onClick="a9()">
+<input type="button" value="0" onClick="a10()"><br>
+<input type="button" value="+" onClick="a11()">
+<input type="button" value="-" onClick="a12()">
+<input type="button" value="*" onClick="a13()">
+<input type="button" value="/" onClick="a14()">
+<input type="button" value="=" onClick="a15()">
+<input type="button" value="clear" onClick="a16()">
+<script>
+function a1(){
+	document.getElementById("cal").value+="1";
+}
+function a2(){
+	document.getElementById("cal").value+="2";
+}
+function a3(){
+	document.getElementById("cal").value+="3";
+}
+function a4(){
+	document.getElementById("cal").value+="4";
+}
+function a5(){
+	document.getElementById("cal").value+="5";
+}
+function a6(){
+	document.getElementById("cal").value+="6";
+}
+function a7(){
+	document.getElementById("cal").value+="7";
+}
+function a8(){
+	document.getElementById("cal").value+="8";
+}
+function a9(){
+	document.getElementById("cal").value+="9";
+}
+function a10(){
+	document.getElementById("cal").value+="0";
+}
+function a11(){
+	document.getElementById("cal").value+="+";
+}
+function a12(){
+	document.getElementById("cal").value+="-";
+}
+function a13(){
+	document.getElementById("cal").value+="*";
+}
+function a14(){
+	document.getElementById("cal").value+="/";
+}
+function a15(){
+	document.getElementById("cal").value=eval(document.getElementById("cal").value);
+}
+function a16(){
+	document.getElementById("cal").value=" ";
+}
+</script>
+</body>
+</html>
