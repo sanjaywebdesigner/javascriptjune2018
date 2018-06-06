@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta http-equiv="refresh" content="1" />-->
+<title>Untitled Document</title>
+<style>
+#main{
+	color:red;
+	
+}
+#main1{
+	color:red;
+	
+}
+</style>
+</head>
+
+<body>
+<script>
+function sanjay()
+
+{var a=document.getElementById("name").value;
+var b=a.length;
+
+if(b<=4)
+{
+if(b<=2)
+		{   
+			document.getElementById("main").innerHTML=" week";
+		}
+		else
+		{
+			document.getElementById("main").innerHTML="average";
+		}
+}
+	else
+		if(b<=5)
+			{
+				document.getElementById("main").innerHTML="good";
+			}
+		else
+		{
+			 document.getElementById("main").innerHTML="stong";	
+		}
+ 
+
+}
+</script>
+<form>
+<input type="text" id="name"onkeyup="sanjay()"  />
+<!--<input type="button" onClick="sanjay()" />
+<input type="text" onkeyup="sanjay()" />-->
+<span id="main"></span><span id="main1"></span>
+</form>
+</body>
+</html>

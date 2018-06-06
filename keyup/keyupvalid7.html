@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta http-equiv="refresh" content="1" />-->
+<title>Untitled Document</title>
+
+</head>
+
+<body>
+<script>
+
+function sanjay()
+
+{var a=document.getElementById("name").value;
+var b=a.length;
+var c=a.indexOf("@");
+if(b<=2)
+
+		{   
+			document.getElementById("main").innerHTML=" week";
+			document.getElementById("main").style.backgroundColor="red";
+		}
+	else if(b<=4)
+		{
+			document.getElementById("main").innerHTML="average";
+			document.getElementById("main").style.backgroundColor="pink";
+		}
+
+	else if(b<=7)
+			{
+				document.getElementById("main").innerHTML="good";
+				document.getElementById("main").style.backgroundColor="blue";
+			}
+		else if(b>7)
+		{
+		if(c!=-1)	
+		{
+			 document.getElementById("main").innerHTML="perfect";
+			 document.getElementById("main").style.backgroundColor="green";	
+		}
+		else{
+			document.getElementById("main").innerHTML="strong";
+			document.getElementById("main").style.backgroundColor="brown";
+		}
+		}
+ 
+
+}
+</script>
+<form>
+<input type="text" id="name" onkeyup="sanjay()" maxlength="8"/>
+<!--<input type="button" onClick="sanjay()" />
+<input type="text" onkeyup="sanjay()" />-->
+<span id="main">passward should be 8 character long & should be special cahracter</span><span id="main1"></span>
+</form>
+</body>
+</html>
