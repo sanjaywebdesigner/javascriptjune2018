@@ -1,0 +1,56 @@
+<html>
+<title>airthmetic Op</title>
+<head>
+
+<script>
+f=0;
+var str="aren1a@x.com";
+var d=str.length;
+var b=str.indexOf("@");
+var c=str.indexOf(".");
+for(i=0;i<d;i++)
+{h=str.charAt(i);
+if(h>=0 && h<=9)
+{
+alert("numerical value");
+f=0;
+break;
+}
+else
+{
+f=f+1;
+}
+}
+if(f>0)
+{
+alert("please enter a numerical value");
+}
+
+document.write(b+"<br>");
+document.write(c+"<br>");
+document.write(d+"<br>");
+g=b+1;
+e=c+3;
+if(b==-1)
+{
+alert("please insert value with @");
+}
+else if(c==-1)
+{
+alert("please insert value with .");
+}
+else if(e>=d)
+{
+alert("please insert 3 values value after .");
+}
+else if(g>=c){
+alert("please insert values after @");}
+</script>
+
+
+
+</head>
+<body>
+
+</body>
+</html>
