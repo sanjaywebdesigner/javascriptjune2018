@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+a="243";
+g=Number(a);
+sum=0;
+for(i=1;i<=a.length;i++)
+{
+	c=g%10;
+	sum=sum*10+c;
+	d=g/10;
+	g=Math.floor(d);
+}
+document.write(sum);
+</script>
+</body>
+</html>
