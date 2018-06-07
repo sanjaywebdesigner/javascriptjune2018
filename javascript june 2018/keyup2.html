@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+.aa{
+	color:green;
+}
+.bb{
+	color:red;
+}
+</style>
+</head>
+
+<body>
+<input type="text" id="main" onKeyUp="abc()">
+<p class="cc"></p>
+<script>
+function abc(){
+a=document.querySelector("#main").value;
+b=a.length;
+if(b<8)
+{
+	c=document.querySelector("p");
+	c.innerHTML="please enter minimum 8 characters";
+	c.classList.add("bb");
+	c.classList.remove("aa");
+}
+else
+{
+	c=document.querySelector("p");
+	c.innerHTML="correct";
+	c.classList.add("aa");
+	c.classList.remove("bb");
+}
+}
+</script>
+</body>
+</html>
