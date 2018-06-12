@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<input type="text" id="main">
+
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+
+    var y = document.createElement("DIV");
+    var x = document.createElement("H1");
+	x.innerHTML=document.getElementById("main").value;
+	y.appendChild(x);
+    document.body.appendChild(y);
+}
+
+</script>
+
+</body>
+</html>

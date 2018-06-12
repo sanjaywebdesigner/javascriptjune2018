@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<input type="text" id="main">
+
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+temp=0;
+function myFunction() {
+
+if(temp==0)
+{
+    var y = document.createElement("div");
+    var x = document.createElement("H1");
+	x.innerHTML=document.getElementById("main").value;
+	y.appendChild(x);
+    document.body.appendChild(y);
+	temp++;
+}
+else
+{
+var y=document.querySelector("div");
+var x = document.createElement("H1");
+	x.innerHTML=document.getElementById("main").value;
+	y.appendChild(x);
+}
+}
+
+</script>
+
+</body>
+</html>
